@@ -1,9 +1,10 @@
 :root{
-    --bg-color: white;
+    --bg-color: rgb(255, 255, 255);
     --fg-color: red;
     --text-color: black;
-    --h1: 3rem;
+    --h1: 8rem;
     --text-size: 3rem;
+    --spacing: 3rem;
 }
 
 body{
@@ -11,10 +12,35 @@ body{
     color: var(--text-color);
     padding: 3rem;
     font-size: var(--text-size);
+
+    *{
+        margin-bottom: var(--spacing);
+    }
+
+    h1{
+        font-size: var(--h1);
+    }
+    
+    nav>ol{
+        display: flex;
+    }
+
+    em{
+        font-style: italic;
+    }
     
 }
 
-@media (prefers-color-scheme: dark) {
+@media (width>1000px) {
+    :root{
+    --text-color: black;
+    --h1: 8rem;
+    --text-size: 1.5rem;
+    --spacing: 4rem;
+}
+
+}
+/* @media (prefers-color-scheme: dark) {
     :root{
     --bg-color: green;
     --fg-color: black;
@@ -24,4 +50,4 @@ body{
     background-color: var(--bg-color);
     color: var(--text-color);
 }
-}
+} */
