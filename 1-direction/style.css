@@ -1,6 +1,17 @@
 :root{
-    --bg-color: blue;
+    --bg-color: white;
     --fg-color: red;
+    --text-color: black;
+    --h1: 3rem;
+    --text-size: 3rem;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 3rem;
+    font-size: var(--text-size);
+    
 }
 
 @media (prefers-color-scheme: dark) {
@@ -11,9 +22,6 @@
 
 body{
     background-color: var(--bg-color);
+    color: var(--text-color);
 }
-}
-
-body{
-    background-color: var(--bg-color);
 }
