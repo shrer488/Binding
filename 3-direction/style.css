@@ -1,10 +1,13 @@
 :root{
-    --bg-color: rgb(255, 255, 255);
+    --bg-color: #2A2723;
     --fg-color: red;
-    --text-color: black;
+    --text-color: #f2bea4;
     --h1: 8rem;
+    --h2: 6rem;
     --text-size: 3rem;
-    --spacing: 3rem;
+    --spacing: 6rem;
+    --heading-type: "Bebas Neue", sans-serif;
+    --body-type:"Courier Prime", monospace;
 }
 
 body{
@@ -12,13 +15,19 @@ body{
     color: var(--text-color);
     padding: 3rem;
     font-size: var(--text-size);
+    font-family: var(--body-type);
 
     *{
         margin-bottom: var(--spacing);
     }
 
-    h1{
+    h1,h2{
         font-size: var(--h1);
+        font-family: var(--heading-type);
+    }
+    
+    h2{
+        font-size: var(--h2);
     }
     
     nav>ol{
@@ -28,12 +37,12 @@ body{
     em{
         font-style: italic;
     }
+
     
 }
 
 @media (width>1000px) {
     :root{
-    --text-color: black;
     --h1: 8rem;
     --text-size: 1.5rem;
     --spacing: 4rem;
