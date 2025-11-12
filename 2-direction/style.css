@@ -3,7 +3,7 @@
     --text-color: black;
     --heading-color: #3521EE;
     --grid-color: #EEEEEE;
-    --h1: 10rem;
+    --h1: 8rem;
     --text-size: 3rem;
     --spacing: 6rem;
     --line-height: 140%;
@@ -18,6 +18,10 @@ p:last-child{
     margin-bottom: 0;
 }
 
+em{
+    font-style: italic;
+} 
+
 body{
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -29,8 +33,12 @@ body{
     /* Used this code to create the grid background https://codepen.io/naprirfan/pen/xEvRae */
     background-image: 
                     linear-gradient(var(--grid-color) .1em, transparent .1em), linear-gradient(90deg, var(--grid-color) .1em, transparent .1em);
-    background-size: var(--border-thickness) var(--border-thickness);
+   
+                    background-size: var(--border-thickness) var(--border-thickness);
 
+    .italic{
+        font-style: italic;
+    }
 
     header{
         nav>ol{
@@ -39,31 +47,36 @@ body{
     }
 
     main{
-
         .hero{
             padding-inline: var(--spacing);
             padding-block: calc(var(--spacing)*2);
+
+            h1{
+                font-size: var(--h1);
+                line-height: 110%;
+                color: var(--heading-color);
+                font-family: "Montserrat", sans-serif;
+                font-weight: 500;
+                margin-block-end: calc(var(--spacing)/2);
+            }
+            
+            
+            section{
+                background: white;
+                padding: calc(var(--spacing)/2);
+                border:0.5rem solid var(--grid-color);
+            }
         }
 
+        
         article{
             background: white;
             inline-size: 100%;
             padding: var(--spacing);
             border-block-start:0.5rem solid var(--grid-color) ;
         }
-
-        h1{
-            font-size: var(--h1);
-            line-height: 100%;
-            color: var(--heading-color);
-            font-family: "Montserrat", sans-serif;
-            background: white;
-        }     
         
 
-        em{
-            font-style: italic;
-        } 
         
     }
 
