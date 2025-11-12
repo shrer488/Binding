@@ -51,18 +51,24 @@ body{
 
             blockquote{
                 border-block:0.2rem solid;
-                padding: 2rem;
+                padding-inline: 2rem;
                 padding-block-end: 0;
+                padding-block-start:4rem ;
                 margin-block-end:var(--spacing);
 
                 p{
-                    padding-block-end: 2rem;
+                    padding-block-end: 4rem;
                 }
 
                 p:first-child{
                     font-size: 5rem;
-                    font-family: ;
+                    /* font-family: ; */
                 }
+            }
+
+            blockquote:nth-last-child(2){
+                border-block-end: 0;
+                margin-block-end: 0;
             }
         }
 
