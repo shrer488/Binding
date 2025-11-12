@@ -1,10 +1,13 @@
 :root{
-    --bg-color: black;
-    --text-color: rgb(215, 215, 215);
-    --h1: 8rem;
+    --bg-color: white;
+    --text-color: black;
+    --heading-color: #3521EE;
+    --grid-color: #EEEEEE;
+    --h1: 10rem;
     --text-size: 3rem;
     --spacing: 6rem;
     --line-height: 140%;
+    --border-thickness: 3rem;
 }
 
 p{
@@ -13,7 +16,6 @@ p{
 
 p:last-child{
     margin-bottom: 0;
-
 }
 
 body{
@@ -21,6 +23,13 @@ body{
     color: var(--text-color);
     font-size: var(--text-size);
     line-height: var(--line-height);
+    font-family:"Open Sans", sans-serif;
+
+    /* Grid background */
+    /* Used this code to create the grid background https://codepen.io/naprirfan/pen/xEvRae */
+    background-image: 
+                    linear-gradient(var(--grid-color) .1em, transparent .1em), linear-gradient(90deg, var(--grid-color) .1em, transparent .1em);
+    background-size: var(--border-thickness) var(--border-thickness);
 
 
     header{
@@ -30,15 +39,25 @@ body{
     }
 
     main{
-        
+
         .hero{
-            background-color: red;
+            padding-inline: var(--spacing);
+            padding-block: calc(var(--spacing)*2);
+        }
+
+        article{
+            background: white;
+            inline-size: 100%;
             padding: var(--spacing);
+            border-block-start:0.5rem solid var(--grid-color) ;
         }
 
         h1{
             font-size: var(--h1);
             line-height: 100%;
+            color: var(--heading-color);
+            font-family: "Montserrat", sans-serif;
+            background: white;
         }     
         
 
