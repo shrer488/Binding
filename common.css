@@ -10,13 +10,7 @@
 body{
     background-color: var(--bg-color);
     color: var(--text-color);
-    padding: 3rem;
     font-size: var(--text-size);
-
-    *{
-        margin-bottom: var(--spacing);
-    }
-
 }
 
 @media (width>1000px) {

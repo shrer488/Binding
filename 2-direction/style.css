@@ -1,39 +1,65 @@
 :root{
-    --bg-color: rgb(255, 255, 255);
-    --fg-color: red;
-    --text-color: black;
+    --bg-color: black;
+    --text-color: rgb(215, 215, 215);
     --h1: 8rem;
     --text-size: 3rem;
-    --spacing: 3rem;
+    --spacing: 6rem;
+    --line-height: 140%;
+}
+
+p{
+    margin-bottom: var(--spacing);
+}
+
+p:last-child{
+    margin-bottom: 0;
+
 }
 
 body{
     background-color: var(--bg-color);
     color: var(--text-color);
-    padding: 3rem;
     font-size: var(--text-size);
+    line-height: var(--line-height);
 
-    *{
-        margin-bottom: var(--spacing);
+
+    header{
+        nav>ol{
+            display: flex;
+        }   
     }
 
-    h1{
-        font-size: var(--h1);
+    main{
+        
+        .hero{
+            background-color: red;
+            padding: var(--spacing);
+        }
+
+        h1{
+            font-size: var(--h1);
+            line-height: 100%;
+        }     
+        
+
+        em{
+            font-style: italic;
+        } 
+        
     }
+
+    footer{
+        background-color: brown;
+
+        
+    }
+
     
-    nav>ol{
-        display: flex;
-    }
-
-    em{
-        font-style: italic;
-    }
     
 }
 
 @media (width>1000px) {
     :root{
-    --text-color: black;
     --h1: 8rem;
     --text-size: 1.5rem;
     --spacing: 4rem;
