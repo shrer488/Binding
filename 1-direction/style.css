@@ -10,11 +10,10 @@
     font-family: "Libre Caslon Display", serif;
 }
 
-
-    em{
-        font-style: italic;
-        font-weight: 600;
-    }
+em{
+    font-style: italic;
+    font-weight: 600;
+}
 
 body{
     background-color: var(--bg-color);
@@ -23,6 +22,41 @@ body{
     
 
     header{
+        position: sticky;
+        top: 0;
+        
+        nav{
+            background: var(--grey);
+            border-block-end:0.1rem solid;
+
+            a{
+                font-size: var(--text-size);
+            }
+        
+            ol{
+                display: flex;
+                justify-content: space-between;
+                
+                li{
+                    flex-grow: 1;
+                    border-inline-end:0.1rem solid;
+                    text-align: center;
+                }
+
+                li:last-child{
+                border-inline-end:0;
+                }
+
+                li:nth-child(2){
+                    background: black;
+                    color: white;
+                }
+            }
+        }
+
+    }
+
+    main{
         section{
             block-size: 80vh;
             padding: 2rem;
@@ -32,17 +66,6 @@ body{
             font-size: var(--h1);
             font-weight: 600;
         }
-
-        nav{
-
-        }
-        nav>ol{
-            display: flex;
-        }
-
-    }
-
-    main{
         article{
             padding: var(--spacing);
 
