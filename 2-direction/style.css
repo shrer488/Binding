@@ -1,17 +1,19 @@
 :root{
     --bg-color: white;
     --text-color: black;
-    --heading-color: #3521EE;
+    --accent-color: #3521EE;
     --grid-color: #EEEEEE;
+    /* --secondary-text-color:#565656; */
     --h1: 8rem;
     --text-size: 3rem;
     --spacing: 6rem;
-    --line-height: 140%;
+    --line-height: 130%;
     --border-thickness: 3rem;
 }
 
 p{
     margin-bottom: var(--spacing);
+    line-height: var(--line-height);
 }
 
 p:last-child{
@@ -38,6 +40,9 @@ body{
 
     .italic{
         font-style: italic;
+         font-weight: 600;
+         /* color: var(--secondary-text-color); */
+
     }
 
     header{
@@ -54,9 +59,9 @@ body{
             h1{
                 font-size: var(--h1);
                 line-height: 110%;
-                color: var(--heading-color);
+                color: var(--accent-color);
                 font-family: "Montserrat", sans-serif;
-                font-weight: 500;
+                font-weight: 600;
                 margin-block-end: calc(var(--spacing)/2);
             }
             
@@ -74,6 +79,11 @@ body{
             inline-size: 100%;
             padding: var(--spacing);
             border-block-start:0.5rem solid var(--grid-color) ;
+
+            blockquote{
+                background-color: var(--grid-color);
+                padding: var(--spacing);
+            }
         }
         
 

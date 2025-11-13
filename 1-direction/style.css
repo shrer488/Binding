@@ -123,7 +123,11 @@ body{
         background-color: black;
         color: white;
         text-align: center;
-         }
+        }
+        
+        a:last-child:after{
+        content: none;
+        }
 
         a:first-child, a:last-child{
             margin-top: var(--spacing);
