@@ -35,14 +35,13 @@ body{
    
                     background-size: var(--border-thickness) var(--border-thickness);
 
-    .italic, em{
+    .italic, em, a{
         font-style: italic;
          font-weight: 600;
     }
 
-    em{
-        color: var(--accent-color);
-    }
+
+     
 
     header{
         nav>ol{
@@ -83,6 +82,11 @@ body{
                 background-color: var(--grid-color);
             }
 
+           a{
+             text-decoration: underline;
+            color: var(--accent-color);
+            }
+
             blockquote{
                 background-color: var(--grid-color);
                 padding: calc(var(--spacing)/2);
@@ -97,7 +101,7 @@ body{
                 }
 
                 p:nth-child(2){
-                    color: var(--accent-color);
+                    opacity: 60%;
                     font-size: var(--text-size);
                     margin-block-start: calc(var(--spacing)/2);
                 }
