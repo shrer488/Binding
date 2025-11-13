@@ -5,7 +5,7 @@
     --h1: 12rem;
     --h2: 5rem;
     --text-size: 3rem;
-    --spacing: 6rem;
+    --spacing: 3rem;
     font-family: "Libre Caslon Display", serif;;
 }
 
@@ -17,13 +17,13 @@
 body{
     background-color: var(--bg-color);
     color: var(--text-color);
-    padding: 3rem;
     font-size: var(--text-size);
-
+    
 
     header{
         section{
             block-size: 80vh;
+            padding: 3rem;
         }
 
         h1{
@@ -31,39 +31,52 @@ body{
             font-weight: 600;
         }
 
+        nav{
+
+        }
         nav>ol{
             display: flex;
         }
+
     }
 
     main{
         article{
+            padding: var(--spacing);
 
             p{
-                padding-block-end: var(--spacing);
+                padding-block-end: calc(var(--spacing)*2);
             }
 
             h2{
                 font-size: var(--h2);
-                padding-block-end: calc(var(--spacing)/3);
+                padding-block-end: calc(var(--spacing));
                 font-weight: 600;
             }
 
-            blockquote{
-                border-block:0.2rem solid;
-                padding-inline: 2rem;
-                padding-block-end: 0;
-                padding-block-start:4rem ;
-                margin-block-end:var(--spacing);
+            mark{
+                background-color: yellow;
+            }
 
-                p{
-                    padding-block-end: 4rem;
-                }
+            blockquote{
+                border-block:0.1rem solid;
+                padding-inline: 2rem;
+                padding-block:4rem;
+                margin-block-end:calc(var(--spacing)*2);
+
 
                 p:first-child{
                     font-size: 5rem;
-                    /* font-family: ; */
+                    padding-block-end: 0;
+
                 }
+                
+                p:nth-child(2){
+                    color: rgb(119, 119, 119);
+                    padding-block-start: 2rem;
+                    padding-block-end: 0;
+                }
+
             }
 
             blockquote:nth-last-child(2){
@@ -71,6 +84,10 @@ body{
                 margin-block-end: 0;
             }
         }
+
+    }
+
+    footer{
 
     }
     
