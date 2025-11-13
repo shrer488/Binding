@@ -4,7 +4,7 @@
     --text-color: black;
     --h1: 12rem;
     --h2: 5rem;
-    --text-size: 3rem;
+    --text-size: 4rem;
     --spacing: 3rem;
     font-family: "Libre Caslon Display", serif;;
 }
@@ -12,6 +12,7 @@
 
     em{
         font-style: italic;
+        font-weight: 600;
     }
 
 body{
@@ -66,8 +67,9 @@ body{
 
 
                 p:first-child{
-                    font-size: 5rem;
+                    font-size: 6rem;
                     padding-block-end: 0;
+                    font-weight: 700;
 
                 }
                 
@@ -87,8 +89,33 @@ body{
 
     }
 
-    footer{
+    .final-quote{
+      border-block:0.1rem solid;
 
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+        a{
+            padding-inline: var(--spacing);
+            padding-block: calc(var(--spacing)/2);
+        }
+
+        a:after{
+            content: "";
+        }
+
+        a:last-child{
+        background-color: black;
+        color: white;
+        text-align: center;
+         }
+
+        a:first-child, a:last-child{
+            margin-top: var(--spacing);
+        }
     }
     
 
