@@ -31,6 +31,7 @@ body{
 
             a{
                 font-size: var(--text-size);
+                display: block;
             }
         
             ol{
