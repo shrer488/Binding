@@ -68,6 +68,10 @@ body{
                 padding: calc(var(--spacing)/2);
                 border:0.5rem solid black;
             }
+
+            mark{
+                color: var(--accent-color);
+            }
         }
 
         
