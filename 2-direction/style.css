@@ -20,9 +20,6 @@ p:last-child{
     margin-bottom: 0;
 }
 
-em{
-    font-style: italic;
-} 
 
 body{
     background-color: var(--bg-color);
@@ -38,11 +35,13 @@ body{
    
                     background-size: var(--border-thickness) var(--border-thickness);
 
-    .italic{
+    .italic, em{
         font-style: italic;
          font-weight: 600;
-         /* color: var(--secondary-text-color); */
+    }
 
+    em{
+        color: var(--accent-color);
     }
 
     header{
@@ -80,6 +79,10 @@ body{
             padding-block-start: calc(var(--spacing));
             border-block-start:0.5rem solid var(--grid-color) ;
 
+            mark{
+                background-color: var(--grid-color);
+            }
+
             blockquote{
                 background-color: var(--grid-color);
                 padding: calc(var(--spacing)/2);
@@ -90,6 +93,10 @@ body{
                     font-weight: 500;
                     font-family: "Space Grotesk", sans-serif;
                     margin-bottom: 0;
+                }
+
+                p:nth-child(2){
+                    color: var(--accent-color);
                 }
             }
         }
