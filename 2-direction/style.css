@@ -93,10 +93,13 @@ body{
                     font-weight: 500;
                     font-family: "Space Grotesk", sans-serif;
                     margin-bottom: 0;
+                    font-size: 3.5rem;
                 }
 
                 p:nth-child(2){
                     color: var(--accent-color);
+                    font-size: var(--text-size);
+                    margin-block-start: calc(var(--spacing)/2);
                 }
             }
         }
