@@ -3,10 +3,10 @@
     --grey: rgb(234, 234, 234);
     --fg-color: red;
     --text-color: black;
-    --h1: 12rem;
-    --h2: 5rem;
-    --text-size: 4rem;
-    --spacing: 3rem;
+    --h1: 2rem;
+    --h2: 1.5rem;
+    --text-size: 1.5rem;
+    --spacing: 1rem;
     font-family: "Libre Caslon Display", serif;;
 }
 
@@ -25,7 +25,7 @@ body{
     header{
         section{
             block-size: 80vh;
-            padding: 3rem;
+            padding: 2rem;
         }
 
         h1{
@@ -62,13 +62,13 @@ body{
 
             blockquote{
                 border-block:0.1rem solid;
-                padding-inline: 2rem;
-                padding-block:4rem;
+                padding-inline: 1rem;
+                padding-block:2rem;
                 margin-block-end:calc(var(--spacing)*2);
 
 
                 p:first-child{
-                    font-size: 6rem;
+                    font-size: 2rem;
                     padding-block-end: 0;
                     font-weight: 700;
 
@@ -98,7 +98,7 @@ body{
 
                  p:first-child{
                     font-weight: 700;
-                    font-size: 6rem;
+                    font-size: 3rem;
                  }
            
         }

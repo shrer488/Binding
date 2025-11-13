@@ -4,11 +4,11 @@
     --accent-color: #BC0D0D;
     --grid-color: #EEEEEE;
     /* --secondary-text-color:#565656; */
-    --h1: 10rem;
-    --text-size: 3rem;
-    --spacing: 6rem;
+    --h1: 2.5rem;
+    --text-size: 1rem;
+    --spacing: 2rem;
     --line-height: 150%;
-    --border-thickness: 3rem;
+    --border-thickness: 1rem;
 }
 
 p{
@@ -74,7 +74,7 @@ body{
             section{
                 background: white;
                 padding: calc(var(--spacing)/2);
-                border:0.5rem solid black;
+                border:0.3rem solid black;
             }
 
             mark{
@@ -102,14 +102,14 @@ body{
             blockquote{
                 background-color: var(--grid-color);
                 padding: calc(var(--spacing)/2);
-                border: 0.5rem var(--text-color) dotted;
+                border: 0.2rem var(--text-color) dotted;
                 margin-block-end: calc(var(--spacing)*1.5);
 
                 p{
                     font-weight: 500;
                     font-family: "Space Grotesk", sans-serif;
                     margin-bottom: 0;
-                    font-size: 3.5rem;
+                    font-size: 1.2rem;
                 }
 
                 p:nth-child(2){
