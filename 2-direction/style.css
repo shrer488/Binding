@@ -45,16 +45,40 @@ body{
 
     header{
 
+        position: sticky;
+        top: 0;
+        
         nav{
-            background-color: var(--bg-color);
-            border-block-end:0.5rem solid var(--grid-color) ;
-             padding-inline: calc(var(--spacing)/1.5);
+            background: var(--grid-color);
+            border-block-end:0.1rem solid var(--accent-color);
 
-        }
+            a{
+                font-size: var(--text-size);
+                display: block;
+            }
+        
+            ol{
+                display: flex;
+                justify-content: space-between;
+                
+                li{
+                    flex-grow: 1;
+                    border-inline-end:0.1rem solid var(--accent-color);
+                    text-align: center;
+                }
 
-        nav>ol{
-            display: flex;
-        }   
+                li:last-child{
+                border-inline-end:0;
+                }
+
+                li:nth-child(3){
+                    background: var(--accent-color);
+                    color: var(--grid-color);
+                }
+            }
+        
+
+    }
     }
 
     main{

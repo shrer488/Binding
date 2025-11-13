@@ -1,6 +1,6 @@
 :root{
     --bg-color: black;
-    --fg-color: red;
+    --accent-color:#C5F306;
     --text-color: #b0b0b0;
     --h1: 4rem;
     --h2: 2rem;
@@ -23,28 +23,61 @@ body{
     text-wrap: pretty;
 
     header{
+        position: sticky;
+        top: 0;
+        
+        nav{
+            background: var(--bg-color);
+            border-block-end:0.1rem solid var(--accent-color);
 
-        h1,h2{
-            font-size: var(--h1);
-            font-family: var(--heading-type);
-            color: var(--heading-color);
-        }
+            a{
+                font-size: var(--text-size);
+                display: block;
+            }
         
-        h1{
-            line-height: 110%;
-        }
-    
-        h2{
-            font-size: var(--h2);
-        }
-        
-        nav>ol{
-            display: flex;
+            ol{
+                display: flex;
+                justify-content: space-between;
+                
+                li{
+                    flex-grow: 1;
+                    border-inline-end:0.1rem solid var(--accent-color);
+                    text-align: center;
+                    color: var(--accent-color);
+                }
+
+                li:last-child{
+                border-inline-end:0;
+                }
+
+                li:nth-child(4){
+                    background: var(--accent-color);
+                    color: var(--bg-color);
+                }
+            }
         }
 
     }
 
     main{
+
+       .hero{
+            h1,h2{
+                        font-size: var(--h1);
+                        font-family: var(--heading-type);
+                        color: var(--heading-color);
+                    }
+                    
+                    h1{
+                        line-height: 110%;
+                    }
+                
+                    h2{
+                        font-size: var(--h2);
+                    }
+       } 
+        
+
         article{
             padding: calc(var(--spacing)/2);
 
@@ -55,7 +88,7 @@ body{
     }
 
    
-
+    }
     
 }
 
