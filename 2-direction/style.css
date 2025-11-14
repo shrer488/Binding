@@ -33,7 +33,7 @@ body{
     background-image: 
                     linear-gradient(var(--grid-color) .1em, transparent .1em), linear-gradient(90deg, var(--grid-color) .1em, transparent .1em);
    
-                    background-size: var(--border-thickness) var(--border-thickness);
+    background-size: var(--border-thickness) var(--border-thickness);
 
     .italic, em, a{
         font-style: italic;
@@ -112,7 +112,7 @@ body{
             inline-size: 100%;
             padding: calc(var(--spacing)/1.5);
             padding-block-start: calc(var(--spacing)*1.5);
-            border-block-start:0.5rem solid var(--grid-color) ;
+            border-block-start:0.2rem solid var(--grid-color) ;
 
             mark{
                 background-color: var(--grid-color);
@@ -141,6 +141,7 @@ body{
                     font-size: var(--text-size);
                     margin-block-start: calc(var(--spacing)/2);
                 }
+
             }
         }
         
@@ -149,7 +150,12 @@ body{
     }
 
     footer{
-        background-color: brown;
+        background-image: 
+                    linear-gradient(var(--grid-color) .1em, transparent .1em), linear-gradient(90deg, var(--grid-color) .1em, transparent .1em);
+
+        padding: var(--spacing);
+            border-block-start:0.2rem solid var(--grid-color) ;
+
 
         
     }
