@@ -1,6 +1,6 @@
 :root{
     --bg-color: rgb(255, 255, 255);
-    --grey: rgb(234, 234, 234);
+    --grey: #eaeaea;
     --fg-color: red;
     --text-color: black;
     --h1: 3rem;
