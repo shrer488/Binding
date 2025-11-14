@@ -3,9 +3,9 @@
     --grey: rgb(234, 234, 234);
     --fg-color: red;
     --text-color: black;
-    --h1: 2rem;
-    --h2: 2rem;
-    --text-size: 1.5rem;
+    --h1: 3rem;
+    --h2: 1.8rem;
+    --text-size: 1.2rem;
     --spacing: 1rem;
     font-family: "Libre Caslon Display", serif;
 }
@@ -58,25 +58,34 @@ body{
     }
 
     main{
-        section{
-            block-size: 80vh;
-            padding: 2rem;
+        
+        .hero{
+                /* block-size: 80vh; */
+                padding: 2rem;
+                padding-block: calc(var(--spacing)*6);
+            border-block-end:0.1rem solid;
+
+                text-align: center;
+            
+
+                h1{
+                    font-size: var(--h1);
+                    font-weight: 700;
+                }
         }
 
-        h1{
-            font-size: var(--h1);
-            font-weight: 600;
-        }
+
         article{
-            padding: var(--spacing);
+            padding-inline: var(--spacing);
+            padding-block: calc(var(--spacing)*2) ;
 
             p{
-                padding-block-end: calc(var(--spacing)*2);
+                padding-block-end: calc(var(--spacing)*3);
             }
 
             h2{
                 font-size: var(--h2);
-                padding-block-end: calc(var(--spacing));
+                padding-block-end: calc(var(--spacing)/1.5);
                 font-weight: 600;
             }
 
@@ -86,13 +95,14 @@ body{
 
             blockquote{
                 border-block:0.1rem solid;
-                padding-inline: 1rem;
+                /* padding-inline: 0.6rem; */
                 padding-block:2rem;
-                margin-block-end:calc(var(--spacing)*2);
+                margin-block-end:calc(var(--spacing)*3);
+                text-align: center;
 
 
                 p:first-child{
-                    font-size: 2rem;
+                    font-size: 1.8rem;
                     padding-block-end: 0;
                     font-weight: 700;
 
@@ -100,7 +110,7 @@ body{
                 
                 p:nth-child(2){
                     color: rgb(119, 119, 119);
-                    padding-block-start: 2rem;
+                    padding-block-start: 0.5rem;
                     padding-block-end: 0;
                 }
 
@@ -116,13 +126,17 @@ body{
             }
             
         }
+
         .final-quote{
                  border-block:0.1rem solid;
-                 padding: var(--spacing);
+                 padding-inline: var(--spacing);
+                 padding-block: calc(var(--spacing)*3);
+                 background: var(--grey);
 
                  p:first-child{
                     font-weight: 700;
-                    font-size: 3rem;
+                    font-size: 2rem;
+                    margin-block-end: var(--spacing);
                  }
            
         }
@@ -130,8 +144,8 @@ body{
 
 
     footer{
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         background-color: var(--grey);
         
         a{
@@ -147,6 +161,7 @@ body{
         background-color: black;
         color: white;
         text-align: center;
+        font-size: 1rem;
         }
         
         a:last-child:after{
