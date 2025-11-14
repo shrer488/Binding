@@ -10,6 +10,10 @@ body{
             border-block-end: 0.1rem black solid;
         }
 
+        a{
+            display: block;
+        }
+
         ol li:nth-child(1){
             background: #eaeaea;
 
