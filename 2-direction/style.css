@@ -153,10 +153,32 @@ body{
         background-image: 
                     linear-gradient(var(--grid-color) .1em, transparent .1em), linear-gradient(90deg, var(--grid-color) .1em, transparent .1em);
 
-        padding: var(--spacing);
-            border-block-start:0.2rem solid var(--grid-color) ;
+        padding-block-start: 1rem;
+        border-block-start:0.2rem solid var(--grid-color);
+        display: flex;
+        flex-direction: column;
 
+        /* a{
+            margin-block-end: calc(var(--spacing)/2);
+        } */
 
+        a:not(:last-child){
+            padding: calc(var(--spacing)/2);
+            /* padding-block-end:calc(var(--spacing)/2); */
+            color: var(--accent-color);
+            font-family: var(--heading-type);
+            font-size: calc(var(--text-size)*1.2);
+            /* background: white; */
+            /* display: inline; */
+         }
+
+         a:last-child{
+            background-color: var(--accent-color);
+            padding: 0.5rem;
+            color: var(--bg-color);
+            text-align: center;
+            margin-block-start: 1rem;
+         }
         
     }
 
