@@ -33,6 +33,8 @@ body{
 
     main{
         
+        /* Article border */
+        /* dashed */
         .hero{
             section{
                     border-block-start: 0.2rem solid;

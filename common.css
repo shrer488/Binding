@@ -19,7 +19,8 @@
 }
 
 body{
-
+    background-image: url(Images/plain-beige-paper-textured-background.jpg);
+    background-repeat: repeat;
     header{
             position: sticky;
             top: 0;
