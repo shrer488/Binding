@@ -1,12 +1,12 @@
 :root{
     --grey: #e7e7e7;
     --text-color: black;
-    --h1: 4.2rem;
+    --h1: 3rem;
     --h2: 1.6rem;
     --text-size: 1.3rem;
     --spacing: 1rem;
     --body-type: "Cardo", serif;
-    --heading-type:"Imbue", serif;
+    --heading-type:"DM Serif Display", serif;
     --bg-color: #ebe1d4;
     
     /* for the dotted background in hero section */
