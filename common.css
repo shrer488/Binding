@@ -11,7 +11,7 @@
     
     /* for the dotted background in hero section */
    --dot-bg: #ebe1d4;
-  --dot-color: rgba(0, 0, 0, 0.439);
+  --dot-color: rgba(0, 0, 0, 0.216);
   --dot-size: 0.1rem;
   --dot-space: 0.5rem;
 
@@ -69,8 +69,9 @@ body{
                     font-size: var(--h1);
                     font-weight: 700;
                     line-height: 100%;
-                    padding-inline: 3rem;
+                    padding-inline: 1rem;
                     padding-block: calc(var(--spacing)*6);
+                    
                 }
 
                 mark{
