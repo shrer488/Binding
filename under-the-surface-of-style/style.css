@@ -57,7 +57,7 @@ body{
             }
 
             blockquote{
-                border:0.2rem dashed;
+                border:0.5rem double;
                 background-color: var(--dark-grey);
                 padding-inline: var(--spacing);
                 padding-block:calc(var(--spacing)*1.5);

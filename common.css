@@ -58,7 +58,7 @@ body{
 
          .hero{
                 text-align: center;
-                block-size: 60vh;
+                block-size: 70vh;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -87,7 +87,7 @@ body{
                 }
                 
                 section{
-                    border-block-start: 0.2rem dashed;
+                    border-block-start: 0.2rem solid;
                     border-block-end: 0.6rem double;
 
                     padding-inline: var(--spacing);
