@@ -37,8 +37,8 @@ body{
        
 
         article{
-            /* padding-inline: calc(var(--spacing)*2); */
-            /* padding-block: calc(var(--spacing)*3) ; */
+            padding-inline: calc(var(--spacing)*1.5);
+            padding-block: calc(var(--spacing)*3) ;
 
             p{
                 padding-block-end: calc(var(--spacing)*4);
@@ -57,18 +57,18 @@ body{
             }
 
             blockquote{
-                border-block:0.6rem double;
-                /* padding-inline: 0.6rem; */
-                padding-block:3rem;
+                border:0.2rem dashed;
+                background-color: var(--dark-grey);
+                padding-inline: var(--spacing);
+                padding-block:calc(var(--spacing)*1.5);
                 margin-block-end:calc(var(--spacing)*4);
                 text-align: center;
 
 
                 p:first-child{
-                    font-size: 1.8rem;
+                    /* font-size: calc(var(--text-size)*1.1); */
                     padding-block-end: 0;
-                    font-weight: 700;
-
+                    font-weight: 800;
                 }
                 
                 p:nth-child(2){

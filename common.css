@@ -1,5 +1,6 @@
 :root{
     --grey: #e7e7e7;
+    --dark-grey: #C8C3BB;
     --text-color: black;
     --h1: 3rem;
     --h2: 1.6rem;
@@ -61,6 +62,8 @@ body{
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                
+                
                 /* dotted background */
                 /* found this from https://codepen.io/edmundojr/pen/xOYJGw */
                 background:linear-gradient(90deg, var(--bg-color) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
@@ -78,19 +81,22 @@ body{
                     /* padding-block: calc(var(--spacing)*6); */
                     
                 }
-
+                
                 mark{
                     background-color: var(--highlighter-color);
                 }
-
+                
                 section{
                     border-block-start: 0.2rem dashed;
+                    border-block-end: 0.6rem double;
+
                     padding-inline: var(--spacing);
                     padding-block: calc(var(--spacing)/2);
                     display: flex;
                     justify-content: space-between;
                     background: var(--bg-color);
-
+                    
+                    /* border-block-start:1rem solid; */
                     p{
                         font-weight: 600;
                         font-size: 1.2rem;
