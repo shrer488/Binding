@@ -1,35 +1,95 @@
 :root{
-    --bg-color: rgb(255, 255, 255);
-    --fg-color: red;
+    --grey: #e7e7e7;
     --text-color: black;
-    --h1: 8rem;
-    --text-size: 3rem;
-    --spacing: 3rem;
+    --h1: 4.2rem;
+    --h2: 1.6rem;
+    --text-size: 1.3rem;
+    --spacing: 1rem;
+    --body-type: "Cardo", serif;
+    --heading-type:"Imbue", serif;
+    --bg-color: #ebe1d4;
+    
+    /* for the dotted background in hero section */
+   --dot-bg: #ebe1d4;
+  --dot-color: rgba(0, 0, 0, 0.439);
+  --dot-size: 0.1rem;
+  --dot-space: 0.5rem;
+
 }
 
 body{
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-size: var(--text-size);
-}
 
-@media (width>1000px) {
-    :root{
-    --text-color: black;
-    --h1: 8rem;
-    --text-size: 1.5rem;
-    --spacing: 4rem;
-}
+    header{
+            position: sticky;
+            top: 0;
+            
+            nav{
+                background: var(--bg-color);
+                border-block-end:1rem solid;
+    
+                a{
+                    font-size: var(--text-size);
+                    display: block;
+                    font-weight: 600;
+                }
+            
+                ol{
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    li{
+                        flex-grow: 1;
+                        border-inline-end:0.1rem solid;
+                        text-align: center;
+                    }
+    
+                    li:last-child{
+                    border-inline-end:0;
+                    }
+    
+                    .active{
+                        background: black;
+                    }
+                }
+            }
+    
+        }
+
+         .hero{
+                text-align: center;
+
+                /* dotted background */
+                /* found this from https://codepen.io/edmundojr/pen/xOYJGw */
+                background:linear-gradient(90deg, var(--bg-color) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+                linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+                var(--dot-color);
+                
+                h1{
+                    font-family: var(--heading-type);
+                    font-size: var(--h1);
+                    font-weight: 700;
+                    line-height: 100%;
+                    padding-inline: 3rem;
+                    padding-block: calc(var(--spacing)*6);
+                }
+
+                mark{
+                    background-color: var(--highlighter-color);
+                }
+
+                section{
+                    border-block-start: 0.2rem dashed;
+                    padding-inline: var(--spacing);
+                    padding-block: calc(var(--spacing)/2);
+                    display: flex;
+                    justify-content: space-between;
+                    background: var(--bg-color);
+
+                    p{
+                        font-weight: 600;
+                        font-size: 1.2rem;
+                    }
+                }
+        }
 
 }
-/* @media (prefers-color-scheme: dark) {
-    :root{
-    --bg-color: green;
-    --fg-color: black;
-}
-
-body{
-    background-color: var(--bg-color);
-    color: var(--text-color);
-}
-} */
