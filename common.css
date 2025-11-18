@@ -57,7 +57,10 @@ body{
 
          .hero{
                 text-align: center;
-
+                block-size: 60vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
                 /* dotted background */
                 /* found this from https://codepen.io/edmundojr/pen/xOYJGw */
                 background:linear-gradient(90deg, var(--bg-color) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
@@ -70,7 +73,9 @@ body{
                     font-weight: 700;
                     line-height: 100%;
                     padding-inline: 1rem;
-                    padding-block: calc(var(--spacing)*6);
+                    flex-grow: 1;
+                    align-content: center;
+                    /* padding-block: calc(var(--spacing)*6); */
                     
                 }
 
