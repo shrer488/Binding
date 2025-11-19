@@ -1,5 +1,6 @@
 :root{
     --highlighter-color: #7FFFF2;
+    --bg-color:#f5fcfd;
 }
 
 em{
@@ -37,7 +38,9 @@ body{
         /* dashed */
         .hero{
 
-            background-image: none;
+            background-image:
+            linear-gradient(to bottom, var(--grid-color) 0.1rem, transparent 0.1rem);
+
             background-color: var(--bg-color);
             section{
                     border-block-start: 0.2rem solid;
