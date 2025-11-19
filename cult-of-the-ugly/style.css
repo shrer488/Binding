@@ -9,8 +9,6 @@ em{
 
 body{
     background-color: var(--bg-color);
-    background-image: url('/Images/noise-light.png');
-    background-repeat: repeat;
     color: var(--text-color);
     background-size: auto;
     font-size: var(--text-size);
@@ -35,7 +33,17 @@ body{
         
         /* Article border */
         /* Solid */
+
         .hero{
+            
+            /* Grid background */
+            /* Used this code to create the grid background https://codepen.io/webDsign/pen/LYxOxdw */
+            background-color: var(--bg-color);
+            background-image:
+            linear-gradient(to right, var(--grid-color) 0.1rem, transparent 0.1rem),
+            linear-gradient(to bottom, var(--grid-color) 0.1rem, transparent 0.1rem);
+        
+
             section{
                     border-block-start: 0.2rem solid;
                     border-block-end: 1rem solid;

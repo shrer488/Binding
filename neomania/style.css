@@ -36,6 +36,9 @@ body{
         /* Article border */
         /* dashed */
         .hero{
+
+            background-image: none;
+            background-color: var(--bg-color);
             section{
                     border-block-start: 0.2rem solid;
                     border-block-end: 0.2rem dashed;
