@@ -5,5 +5,10 @@
 }
 
 body{
-    
+    main{
+        .content{
+            display: grid;
+            grid-template-columns: repeat(1fr 2fr 1fr);
+        }
+    }
 }
