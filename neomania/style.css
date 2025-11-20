@@ -70,50 +70,15 @@ body{
 
             
             blockquote{
-                border:0.5rem double;
-                background-color: var(--dark-grey);
-                padding-inline: var(--spacing);
-                padding-block:calc(var(--spacing)*1.5);
-                margin-block-end:calc(var(--spacing)*4);
-                text-align: center;
+                border:0.2rem dashed;
+                background-color: var(--grey);
                 
-                
-                p:first-child{
-                    /* font-size: calc(var(--text-size)*1.1); */
-                    padding-block-end: 0;
-                    font-weight: 800;
-                }
-                
-                p:nth-child(2){
-                    color: rgb(119, 119, 119);
-                    padding-block-start: 0.5rem;
-                    padding-block-end: 0;
-                }
-                
-            }
-            
-            blockquote:nth-last-child(2){
-                border-block-end: 0;
-                margin-block-end: 0;
-            }
-            
-            blockquote:last-child{
-                border-block-end: 0;
-            }
-            
-            .first-blockquote{
-                border: none;
-                padding: 0;
-                background: none;
-                font-style: italic;
-                font-weight: 600;
-                /* background: var(--grey); */
-                /* margin-block-end:calc(var(--spacing)*3) ; */
             }
         }
 
         .final-quote{
-                 border-block:0.1rem solid;
+                 border-block-end:0.2rem dashed;
+                 border-block-start:0.2rem solid;
                  padding-inline: var(--spacing);
                  padding-block: calc(var(--spacing)*3);
                  background: var(--grey);
@@ -162,7 +127,7 @@ body{
     
 }
 
-@media (width>1000px) {
+/* @media (width>1000px) {
     :root{
     --text-color: black;
     --h1: 8rem;
@@ -170,7 +135,7 @@ body{
     --spacing: 4rem;
 }
 
-}
+} */
 /* @media (prefers-color-scheme: dark) {
     :root{
     --bg-color: green;

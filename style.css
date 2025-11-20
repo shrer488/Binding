@@ -5,31 +5,5 @@
 }
 
 body{
-    nav{
-        ol li{
-            padding: var(--spacing);
-            border-block-end: 0.1rem black solid;
-        }
-
-        a{
-            display: block;
-        }
-
-        ol li:nth-child(1){
-            background: #eaeaea;
-
-        }
-
-        li:nth-child(2){
-            background: #BC0D0D;
-
-        }
-
-        li:nth-child(3){
-            background: #C5F306;
-            
-        }
-
-
-    }
+    
 }
