@@ -10,10 +10,21 @@ body{
 
     main{
         .hero{
+        block-size: 100%;
+        background: none;
+
             h1{
                 font-size:var(--h1);
                 font-family: var(--hero-type);
                 padding-inline: var(--spacing);
+            padding-block: calc(var(--spacing)/2);
+
+            }
+
+            section{
+                    border-block-start: 1rem solid;
+                    border-block-end: 0.6rem double;
+
             }
         }
         .content{

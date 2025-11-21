@@ -101,7 +101,7 @@ body{
             font-weight: 700;
             line-height: 100%;
             padding-inline: calc(var(--spacing)*2);
-            flex-grow: 1;
+            flex-grow: 1; /* for making it sit in the middle*/
             align-content: center;
         }
         
