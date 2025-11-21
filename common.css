@@ -7,7 +7,7 @@
     --text-size: 1.2rem;
     --spacing: 1rem;
     --body-type: "Cardo", serif;
-    --heading-type:"DM Serif Display", serif;
+    --heading-type:"Imbue",serif;
     --bg-color: #ebe1d4;
     
     /* for the dotted background in hero section */
@@ -34,7 +34,7 @@ p{
 {
 :root{
     --spacing:1.5rem;
-        --h1: 4.3rem;
+        --h1: 18rem;
 }
 }
 
@@ -125,7 +125,8 @@ body{
         @media (width>1000px) {
         block-size: 100%;
         h1{
-                padding-block: calc(var(--h1)*1.5);
+            line-height: 150%;
+                /* padding-block: calc(var(--h1)*1.5); */
 
             }
 
