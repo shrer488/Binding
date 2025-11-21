@@ -3,6 +3,7 @@
      --bg-color: #E6E6E6;
      --h1:7rem;
      --hero-type:"Imbue",serif;
+     --h2:1.8rem;
 }
 
 body{
@@ -33,6 +34,9 @@ body{
                 display: grid;
                 grid-template-columns: 1fr;
                 padding-inline: var(--spacing);
+                padding-block:calc(var(--spacing)*2) ;
+
+
             section:nth-child(1){
                 order:3;
             }
@@ -43,6 +47,15 @@ body{
 
             section:nth-child(3){
                 order: 2;
+            }
+
+            section{
+                padding-block-end: calc(var(--spacing)*2);
+                border-block-end: 0.1rem solid;
+                h2{
+                    font-size: var(--h2);
+                    font-weight: 600;
+                }
             }
 
             @media (width>800px) {
