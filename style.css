@@ -1,14 +1,28 @@
-.root{
+:root{
     --spacing:2rem;
-    background: #E3D8C9;
-
+     --bg-color: #E6E6E6;
+     --h1:7rem;
+     --hero-type:"Imbue",serif;
 }
 
 body{
+    background: var(--bg-color);
+
     main{
+        .hero{
+            h1{
+                font-size:var(--h1);
+                font-family: var(--hero-type);
+                padding-inline: var(--spacing);
+            }
+        }
         .content{
-            display: grid;
-            grid-template-columns: repeat(1fr 2fr 1fr);
+            
+            @media (width>800px) {
+                display: grid;
+                grid-template-columns: 1fr 2fr 1fr;
+                
+            }
         }
     }
 }
