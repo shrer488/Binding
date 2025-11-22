@@ -2,7 +2,7 @@
     --grey: #e7e7e7;
     --dark-grey: #C8C3BB;
     --text-color: black;
-    --h1: 3rem;
+    --h1: 4rem;
     --h2: 1.8rem;
     --text-size: 1.2rem;
     --spacing: 1rem;
@@ -41,6 +41,12 @@ p{
 
 
 body{
+    /* Used Michael's code for adding the paper texture as background */
+    background-image: url("Images/concrete-wall-textured-backgrounds-built-structure-concept.jpg");
+    background-blend-mode:multiply;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
 
     header{
         position: sticky;
@@ -80,7 +86,7 @@ body{
 
     .hero{
         text-align: center;
-        block-size: 70vh;
+        block-size: 55vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -200,5 +206,6 @@ body{
             }
         
         }
+        
 
 }

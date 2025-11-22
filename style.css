@@ -1,7 +1,7 @@
 :root{
     --spacing:1rem;
      --bg-color: #E6E6E6;
-     --h1:26rem;
+     --h1:6rem;
      --hero-type:"Imbue",serif;
      --h2:1.8rem;
      --h3:1.8rem;
@@ -13,104 +13,111 @@
     }
 }
 
+@media (width>1000px) {
+    :root{
+        --h1:26rem;
+        --hero-type:"Imbue",serif;
+        --h2:1.8rem;
+        --h3:1.8rem;
+    }
+}
+
 body{
-    background: var(--bg-color);
-    font-family:var(--body-type) ;
+    font-family:var(--body-type);
 
     main{
         .hero{
-        block-size: 100%;
-        background: none;
-
-            h1{
-                font-size:var(--h1);
-                line-height: 120%;
-                font-family: var(--hero-type);
-                padding-inline: var(--spacing);
-                padding-block: calc(var(--spacing)/2);
-
-            }
-
-            section{
-                    border-block-start: 1rem solid;
-                    border-block-end: 0.1rem solid;
-                    padding-inline: 1rem;
-                    padding-block: calc(var(--spacing)/4);
-
-            }
-        }
-        .content{
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                /* padding-inline: var(--spacing); */
-
-            section{
-                padding: calc(var(--spacing)*2);
-                border-block-end: 0.1rem solid;
-
-                h2{
-                    font-size: var(--h2);
-                    font-weight: 600;
-                    margin-block-start: var(--spacing)
-                }
-
-                /* second column in list of articles */
-                ul>li:first-child{
-                    padding-block-end: calc(var(--spacing)*2);
-                    margin-block-end: calc(var(--spacing)*2);
-                }
-
-                li:first-child{
-                    border-block-end: 0.1rem solid;
-                }
-
-                /* number backgrounds */
-                .neomania-bg, .cult-of-the-ugly-bg,.under-the-surface-of-style-bg{
-                    align-content: center;
-                    display: block;
-
-
-                    p{
-                        font-size: 8rem;
-                        text-align: center;
-                        font-family: var( --hero-type);
-                        padding-block: calc(var(--spacing)*2);
-                    }
-                }
-
-                .neomania-bg{
-                    background-color: #7FFFF2;
-
-                    p{
-                        font-size: calc(var(--h2)*4);
-                    }
-                }
-
-                .cult-of-the-ugly-bg,.under-the-surface-of-style-bg{
-                    background-color: #FFAFC0;
-
-                    p{
-                        padding-block: calc(var(--spacing));
-                    }
-
-                }
-
-                .under-the-surface-of-style-bg{
-                    background-color: #FFD77F;
-                }
+                background: none;
 
                 section{
-                    border-block-start: 0.2rem solid;
-                    border-block-end: 0.2rem dashed;
-                }
+                        border-block-start: 1rem solid;
+                        border-block-end: 0.1rem solid;
+                        padding-inline: 1rem;
+                        padding-block: calc(var(--spacing)/4);
+                } 
+            }
+
+        .content, .additional-info{
+                display: grid;
+                grid-template-columns: 1fr;
+                padding: var(--spacing);
+
+                /* Article section */
+                section{
+                    border-block-end: 0.1rem solid;
+
+                    h2{
+                        font-size: var(--h2);
+                        font-weight: 600;
+                        margin-block-start: var(--spacing)
+                    }
+
+                    /* second column in list of articles */
+                    ul>li:first-child{
+                        padding-block-end: calc(var(--spacing)*2);
+                        margin-block-end: calc(var(--spacing)*2);
+                    }
+
+                    li:first-child{
+                        border-block-end: 0.1rem solid;
+                    }
+
+                    /* number backgrounds */
+                    .neomania-bg, .cult-of-the-ugly-bg,.under-the-surface-of-style-bg{
+                        align-content: center;
+                        display: block;
 
 
-                }
+                        p{
+                            font-size: 8rem;
+                            text-align: center;
+                            font-family: var( --hero-type);
+                            padding-block: calc(var(--spacing)*2);
+                        }
+                    }
+
+                    .neomania-bg{
+                        background-color: #7FFFF2;
+
+                        p{
+                            font-size: calc(var(--h2)*4);
+                        }
+                    }
+
+                    .cult-of-the-ugly-bg,.under-the-surface-of-style-bg{
+                        background-color: #FFAFC0;
+
+                        p{
+                            padding-block: calc(var(--spacing));
+                        }
+
+                    }
+
+                    .under-the-surface-of-style-bg{
+                        background-color: #FFD77F;
+                    }
+
+                    .content-article-link{
+                        pointer-events: none;
+                    }
+
+                    section{
+                        border-block-start: 0.2rem solid;
+                        border-block-end: 0.2rem dashed;
+                    }
+
+
+                    }
             
                 section:first-child{
                 border-inline-end: 0.1rem solid;
 
                 }
+            }
+
+            .additional-info{
+                grid-template-columns: 2fr 1fr;
+
             }
 
             @media (width>800px) {
@@ -130,19 +137,25 @@ body{
             }
         }
 
-    .paper{
-        background-image: url(Images/grunge-style-background-with-old-crumpled-paper-design.jpg);
-        /* inline-size: 100%; */
-        /* block-size: 100%; */
-        position: sticky;
-        aspect-ratio: 1/1;
-        mix-blend-mode: multiply;
-        top: 0;
-        opacity: 40%;
-        z-index: 1;
-        object-fit: cover;
-        /* img{
-        } */
-    }
     
+}
+
+@media (width>1000px) {
+    body{
+        main{
+            .content, .additional-info{
+                grid-template-columns: 1fr 1fr;
+                padding: 0;
+
+             
+                section{
+                padding: calc(var(--spacing)*2);
+
+                .content-article-link{
+                    pointer-events: auto;
+                }
+                }
+            }
+        }
+    }
 }
