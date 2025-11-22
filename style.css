@@ -3,7 +3,6 @@
      --bg-color: #E6E6E6;
      --h1:6rem;
      --hero-type:"Imbue",serif;
-     --h2:1.8rem;
      --h3:1.8rem;
 }
 
@@ -17,7 +16,6 @@
     :root{
         --h1:26rem;
         --hero-type:"Imbue",serif;
-        --h2:1.8rem;
         --h3:1.8rem;
     }
 }
@@ -37,11 +35,12 @@ body{
                 } 
             }
 
+
         .content, .additional-info{
                 display: grid;
                 grid-template-columns: 1fr;
                 padding: var(--spacing);
-
+ 
                 /* Article section */
                 section{
                     border-block-end: 0.1rem solid;
@@ -49,16 +48,12 @@ body{
                     h2{
                         font-size: var(--h2);
                         font-weight: 600;
-                        margin-block-start: var(--spacing)
                     }
 
                     /* second column in list of articles */
                     ul>li:first-child{
                         padding-block-end: calc(var(--spacing)*2);
                         margin-block-end: calc(var(--spacing)*2);
-                    }
-
-                    li:first-child{
                         border-block-end: 0.1rem solid;
                     }
 
@@ -66,6 +61,7 @@ body{
                     .neomania-bg, .cult-of-the-ugly-bg,.under-the-surface-of-style-bg{
                         align-content: center;
                         display: block;
+                        margin-block-end: var(--spacing);
 
 
                         p{
@@ -106,13 +102,7 @@ body{
                         border-block-end: 0.2rem dashed;
                     }
 
-
                     }
-            
-                section:first-child{
-                border-inline-end: 0.1rem solid;
-
-                }
             }
 
             .additional-info{
@@ -153,7 +143,13 @@ body{
 
                 .content-article-link{
                     pointer-events: auto;
+
+                    
                 }
+                }
+
+                section:first-child{
+                border-inline-end: 0.1rem solid;
                 }
             }
         }
