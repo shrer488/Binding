@@ -42,7 +42,7 @@ p{
 
 body{
     /* Used Michael's code for adding the paper texture as background */
-    background-image: url("Images/concrete-wall-textured-backgrounds-built-structure-concept.jpg");
+    background-image: url("Images/grunge-style-background-with-old-crumpled-paper-design.jpg");
     background-blend-mode:multiply;
 	background-size: cover;
 	background-attachment: fixed;
