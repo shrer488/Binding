@@ -37,7 +37,8 @@ body{
 
         .content, .additional-info{
             display: grid;
-            padding: var(--spacing);
+            padding-inline: var(--spacing);
+            padding-block-start: calc(var(--spacing)*2);
         }
         
         .content{
@@ -45,13 +46,12 @@ body{
  
                 /* Article section */
                 section{
-                    /* border-block-end: 0.1rem solid; */
-
 
                     h2{
                         font-size: var(--h2);
                         font-weight: 600;
                         font-style: italic;
+                        margin-block-start: 1rem;
                     }
 
                     /* second column in list of articles */
@@ -65,7 +65,7 @@ body{
                     .neomania-bg, .cult-of-the-ugly-bg,.under-the-surface-of-style-bg{
                         align-content: center;
                         display: block;
-                        margin-block-end: var(--spacing);
+                        /* margin-block-end: 1rem; */
 
 
                         p{
