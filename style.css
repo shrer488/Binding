@@ -39,7 +39,8 @@ body{
         .content, .additional-info{
             display: grid;
             padding-inline: 1rem;
-            padding-block: calc(var(--spacing)*2);
+            padding-block-start: calc(var(--spacing)*2);
+            padding-block-end:calc(var(--spacing)*3) ;
         }
         
         .content{
@@ -100,12 +101,14 @@ body{
                         pointer-events: none;
                     }
 
-                    section{
-                        border-block-start: 0.2rem solid;
-                        border-block-end: 0.2rem dashed;
                     }
 
-                    }
+                section:first-child{
+                    margin-block-end: calc(var(--spacing)*3);
+                    padding-block-end:calc(var(--spacing)*3) ;
+                    border-block-end: 0.1rem solid;
+
+                } 
             }
 
         .additional-info{
