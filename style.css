@@ -105,6 +105,13 @@ body{
 
                     .content-article-link{
                         pointer-events: none;
+                        margin-block-end: var(--spacing);
+                    }
+
+                    .link-to-article{
+                        display: inline-block;
+                        margin-block-start: var(--spacing);
+                        font-weight: 600;
                     }
 
                     }
