@@ -37,7 +37,7 @@ body{
 
         .content, .additional-info{
             display: grid;
-            padding-inline: var(--spacing);
+            padding-inline: 1rem;
             padding-block-start: calc(var(--spacing)*2);
         }
         
