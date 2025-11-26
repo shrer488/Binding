@@ -42,6 +42,7 @@ p{
 
 body{
     /* Used Michael's code for adding the paper texture as background */
+    background-color: #e7e7e7;
     background-image: url("Images/marjan-blan--Vc-ok8CeBU-unsplash.jpg");
     background-blend-mode:multiply;
 	background-size: cover;
