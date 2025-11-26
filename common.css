@@ -42,7 +42,7 @@ p{
 
 body{
     /* Used Michael's code for adding the paper texture as background */
-    background-image: url("Images/—Pngtree—vintage\ paper\ texture\ background_1308751.png");
+    background-image: url("Images/marjan-blan--Vc-ok8CeBU-unsplash.jpg");
     background-blend-mode:multiply;
 	background-size: cover;
 	background-attachment: fixed;
@@ -56,12 +56,7 @@ body{
                 background: var(--bg-color);
                 border-block-end:1rem solid;
     
-                a{
-                    font-size: var(--text-size);
-                    display: block;
-                    font-weight: 600;
-                }
-            
+                
                 ol{
                     display: flex;
                     justify-content: space-between;
@@ -70,6 +65,13 @@ body{
                         flex-grow: 1;
                         border-inline-end:0.1rem solid;
                         text-align: center;
+                        
+                        a{
+                            font-size: var(--text-size);
+                            display: block;
+                            font-weight: 600;
+                            line-height: 2rem;
+                        }
                     }
     
                     li:last-child{
