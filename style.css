@@ -1,7 +1,7 @@
 :root{
     --spacing:1.5rem;
      --bg-color: #E6E6E6;
-     --h1:7rem;
+     --h1:7.1rem;
      --hero-type:"Imbue",serif;
      --h3:1.8rem;
 }
@@ -28,7 +28,7 @@ body{
                 background: none;
 
                 h1{
-                    font-size: calc(var(--h1)*1.5);
+                    font-size: var(--h1);
                 }
 
                 section{
