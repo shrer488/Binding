@@ -84,6 +84,9 @@ body{
                         align-content: center;
                         display: block;
                         margin-block-end:0.5rem;
+                         background-image: url("Images/marjan-blan--Vc-ok8CeBU-unsplash.jpg");
+                        background-blend-mode: multiply;
+                        border: 0.2rem dotted;
 
 
                         p{
@@ -96,6 +99,7 @@ body{
 
                     .neomania-bg{
                         background-color: #7FFFF2;
+                        color: #346b66;
 
                         p{
                             font-size: calc(var(--h2)*4);
@@ -104,10 +108,14 @@ body{
 
                     .cult-of-the-ugly-bg,.under-the-surface-of-style-bg{
                         background-color: #FFAFC0;
+                        color: #6b3443;
+
                     }
 
                     .under-the-surface-of-style-bg{
                         background-color: #FFD77F;
+                        color: #6b6534;
+
                     }
 
                     .content-article-link{
@@ -146,9 +154,17 @@ body{
             }
 
             .intro{
+
+                h2{
+                    font-size: calc(var(--h2)*1.5);
+                }
                 p:first-of-type{
                     margin-block-end: var(--spacing);
                 }
+            }
+
+            .colophon{
+                background: var(--bg-color);
             }
 
         }
