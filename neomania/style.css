@@ -1,5 +1,4 @@
 :root{
-    --highlighter-color: #7FFFF2;
     --bg-color:#f5fcfd;
 }
 
@@ -8,12 +7,16 @@ em{
     font-weight: 600;
 }
 
+mark{
+    background-color: var(--article-1-highlight-color);
+}
+
 body{
-    background-color: var(--bg-color);
-    background-image: url('/Images/noise-light.png');
-    background-repeat: repeat;
+    /* background-color: var(--bg-color); */
+    /* background-image: url('/Images/noise-light.png'); */
+    /* background-repeat: repeat; */
     color: var(--text-color);
-    background-size: auto;
+    /* background-size: auto; */
     font-size: var(--text-size);
     font-family: var(--body-type);
     
@@ -24,7 +27,7 @@ body{
         nav{
             .active{
                 a{
-                    color: var(--highlighter-color);
+                    color: var(--article-1-highlight-color);
                 }
             }
         }
@@ -38,10 +41,10 @@ body{
         /* dashed */
         .hero{
 
-            background-image:
-            linear-gradient(to bottom, var(--grid-color) 0.1rem, transparent 0.1rem);
+            /* background-image:
+            linear-gradient(to bottom, var(--grid-color) 0.1rem, transparent 0.1rem); */
 
-            background-color: var(--bg-color);
+            /* background-color: var(--bg-color); */
             section{
                     border-block-start: 0.2rem solid;
                     border-block-end: 0.2rem dashed;
@@ -51,12 +54,6 @@ body{
        
 
         article{
-            padding-inline: calc(var(--spacing)*1.5);
-            padding-block-start: calc(var(--spacing)*4) ;
-
-            p{
-                padding-block-end: calc(var(--spacing)*4);
-            }
 
             p:last-child{
                 padding-block-end:0;
@@ -65,12 +62,12 @@ body{
 
 
             mark{
-                background-color: yellow;
+                background-color: var(--article-1-highlight-color);
             }
 
             
             blockquote{
-                border:0.2rem dashed;
+                border:0.2rem dotted;
                 background-color: var(--grey);
                 
             }
@@ -127,13 +124,18 @@ body{
     
 }
 
-/* @media (width>1000px) {
+@media (width>1000px) {
     :root{
     --text-color: black;
     --h1: 8rem;
-    --text-size: 1.5rem;
-    --spacing: 4rem;
+    --text-size: 1.2rem;
+    --spacing: 2rem;
 }
+
+
+}
+
+/* 
 
 } */
 /* @media (prefers-color-scheme: dark) {

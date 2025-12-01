@@ -1,11 +1,14 @@
 :root{
-    --highlighter-color: #FFD77F;
     --h1:8rem;
 }
 
 em{
     font-style: italic;
     font-weight: 600;
+}
+
+mark{
+    background-color: var(--article-3-highlight-color);
 }
 
 body{
@@ -21,7 +24,7 @@ body{
             .active{
                 a{
                     
-                    color: var(--highlighter-color);
+                    color: var(--article-3-highlight-color);
                 }
             }
         }

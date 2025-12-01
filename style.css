@@ -67,10 +67,6 @@ body{
                 section{
 
 
-                    span{
-                        opacity: 80%;
-                    }
-
                     /* second column in list of articles */
                     ul>li:first-child{
                         padding-block-end: calc(var(--spacing)*3);
@@ -88,34 +84,28 @@ body{
                         background-blend-mode: multiply;
                         border: 0.2rem dotted;
 
-
                         p{
-                            font-size: 8rem;
+                            font-size: calc(var(--h2)*4);
                             text-align: center;
                             font-family: var( --hero-type);
                             padding-block: calc(var(--spacing)*2);
                         }
                     }
 
+                    /* Adding colors to the articles */
                     .neomania-bg{
-                        background-color: #7FFFF2;
-                        color: #346b66;
-
-                        p{
-                            font-size: calc(var(--h2)*4);
-                        }
+                        background-color: var(--article-1-highlight-color);
+                        color: var(--article-1-text-color);
                     }
 
-                    .cult-of-the-ugly-bg,.under-the-surface-of-style-bg{
-                        background-color: #FFAFC0;
-                        color: #6b3443;
-
+                    .cult-of-the-ugly-bg{
+                        background-color: var(--article-2-highlight-color);
+                        color: var(--article-2-text-color);
                     }
 
                     .under-the-surface-of-style-bg{
-                        background-color: #FFD77F;
-                        color: #6b6534;
-
+                        background-color: var(--article-3-highlight-color);
+                        color: var(--article-3-text-color);
                     }
 
                     .content-article-link{
@@ -128,6 +118,10 @@ body{
                         margin-block-start: var(--spacing);
                         font-weight: 600;
                         font-size:var(--text-size) ;
+                    }
+
+                    .link-to-article:hover{
+                        text-decoration: underline;
                     }
 
                     }
@@ -202,15 +196,48 @@ body{
 
                 .content-article-link{
                     pointer-events: auto;
-
-                    
                 }
 
+                .link-to-article{
+                        margin-block-start:calc(var(--spacing)/2);
+
                 }
 
+                .neomania-bg{
+                    p{
+                            font-size: calc(var(--h2)*4);
+                        padding-block: calc(var(--spacing)*6);
+
+                        }
+                }
+
+                .cult-of-the-ugly-bg,.under-the-surface-of-style-bg{
+                    p{
+                        font-size: calc(var(--h2)*2.5);
+                        padding-block: calc(var(--spacing));
+
+                    }
+                }
+
+
+                    /* second column in list of articles */
+                    ul>li:first-child{
+                        padding-block-end: calc(var(--spacing));
+                        margin-block-end: calc(var(--spacing));
+                        border-block-end: 0.1rem solid;
+                    }
+                
+                
+                
+                }
                 section:first-child{
                 border-inline-end: 0.1rem solid;
+                border-block-end: 0;
+                    margin-block-end:0 ;
+
                 }
+
+
             }
 
             .additional-info{
