@@ -25,7 +25,6 @@ body{
 
     main{
         .hero{
-            
             h1{
                 font-size: var(--h1);
                 background-image: none;
@@ -186,6 +185,9 @@ body{
 @media (width>1000px) {
     body{
         main{
+            .hero{
+                block-size: 100%;
+            }
             .content, .additional-info{
                 grid-template-columns: 1fr 1fr;
                 padding: 2rem;

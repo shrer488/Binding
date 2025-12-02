@@ -22,7 +22,6 @@ body{
         nav{
             .active{
                 a{
-                    
                     color: var(--article-3-highlight-color);
                 }
 

@@ -43,7 +43,7 @@ body{
             }
 
             section{
-                    border-block-end: 0.2rem dashed;
+                    border-block-end: 0.2rem dotted;
             }
         }
        
@@ -53,8 +53,6 @@ body{
             p:last-child{
                 padding-block-end:0;
             }
-
-
 
             mark{
                 background-color: var(--article-1-highlight-color);
@@ -119,7 +117,7 @@ body{
     
 }
 
-@media (width>1000px) {
+/* @media (width>1000px) {
     :root{
     --text-color: black;
     --h1: 8rem;
@@ -128,7 +126,7 @@ body{
 }
 
 
-}
+} */
 
 /* 
 
