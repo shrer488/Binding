@@ -25,10 +25,10 @@ body{
 
     main{
         .hero{
-                background: none;
-
-                h1{
-                    font-size: var(--h1);
+            
+            h1{
+                font-size: var(--h1);
+                background-image: none;
                 }
 
                 section{

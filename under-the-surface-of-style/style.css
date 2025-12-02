@@ -1,5 +1,4 @@
 :root{
-    --h1:8rem;
 }
 
 em{
@@ -26,6 +25,11 @@ body{
                     
                     color: var(--article-3-highlight-color);
                 }
+
+                a:hover{
+                    background-color: black;
+                }
+
             }
         }
 
@@ -33,16 +37,23 @@ body{
     }
 
     main{
-        
-       /* Article border */
-        /* double */
+
         .hero{
+
+            h1{
+                background-color: var(--article-3-highlight-color);
+                color: var(--article-3-text-color);
+            }
+
+            /* Article border */
+            /* double */
             section{
                     border-block-start: 0.2rem solid;
                     border-block-end: 0.6rem double;
 
             }
         }
+
         article{
             
            blockquote{

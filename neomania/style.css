@@ -12,43 +12,38 @@ mark{
 }
 
 body{
-    /* background-color: var(--bg-color); */
-    /* background-image: url('/Images/noise-light.png'); */
-    /* background-repeat: repeat; */
     color: var(--text-color);
-    /* background-size: auto; */
     font-size: var(--text-size);
     font-family: var(--body-type);
     
 
     header{
-        
-
         nav{
             .active{
                 a{
                     color: var(--article-1-highlight-color);
                 }
-            }
-        }
 
-	
+                a:hover{
+                    background-color: black;
+                }
+            }
+            
+        }
     }
 
     main{
         
         /* Article border */
-        /* dashed */
         .hero{
 
-            /* background-image:
-            linear-gradient(to bottom, var(--grid-color) 0.1rem, transparent 0.1rem); */
+            h1{
+                background-color: var(--article-1-highlight-color);
+                color: var(--article-1-text-color);
+            }
 
-            /* background-color: var(--bg-color); */
             section{
-                    border-block-start: 0.2rem solid;
                     border-block-end: 0.2rem dashed;
-
             }
         }
        
