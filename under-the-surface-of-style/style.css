@@ -54,6 +54,11 @@ body{
         }
 
         article{
+
+            a:hover{
+                    /* background-color: var(--highlighter-color); */
+                    color: var(--article-3-text-color);
+                }
             
            blockquote{
             border:0.5rem double;

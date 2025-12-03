@@ -59,6 +59,11 @@ body{
                 padding-block-end:0;
             }
 
+            a:hover{
+                    /* background-color: var(--highlighter-color); */
+                    color: var(--article-2-text-color);
+                }
+
 
 
             mark{

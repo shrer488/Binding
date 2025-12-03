@@ -173,11 +173,6 @@ body{
                         text-decoration: underline;
                     }
         
-                    a:hover{
-                        /* background-color: var(--highlighter-color); */
-                        color: blue;
-                    }
-        
                     blockquote{
                         padding-inline: var(--spacing);
                         padding-block:calc(var(--spacing)*2);
@@ -309,11 +304,6 @@ body{
     
                 a{
                     text-decoration: underline;
-                }
-    
-                a:hover{
-                    /* background-color: var(--highlighter-color); */
-                    color: blue;
                 }
     
                 blockquote{

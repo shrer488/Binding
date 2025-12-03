@@ -58,6 +58,10 @@ body{
                 background-color: var(--article-1-highlight-color);
             }
 
+            a:hover{
+                    /* background-color: var(--highlighter-color); */
+                    color: var(--article-1-text-color);
+                }
             
             blockquote{
                 border:0.2rem dotted;
