@@ -182,7 +182,7 @@ body{
     
 }
 
-@media (width>1000px) {
+@media (width>800px) {
     body{
         main{
             .hero{
