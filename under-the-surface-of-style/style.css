@@ -68,6 +68,7 @@ body{
                 border: 0.3rem double;
                 border-radius: 1rem;
                 corner-shape: notch;
+                background-color: var(--bg-color);
 
                 p:first-child{
                     font-size: calc(var(--text-size)*1.4);

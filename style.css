@@ -153,11 +153,7 @@ body{
                     padding-block-end: 0;
                 }
             }
-
         }
-
-        
-        
     }
 }
 
@@ -170,16 +166,27 @@ body{
     }
 }
 
+@media (width>750px) {
+body{
+    main{
+        .additional-info{
+                grid-template-columns: 1fr;
+        }
+    }
+}
+}
+
 @media (width>760px) {
     
     body{
         main{
+
             .hero{
                 block-size: 100%;
             }
 
 
-            .content{
+            .content,.additional-info{
                 grid-template-columns: 1fr 1fr;
                 padding: 1rem;
                 padding-block: 6rem;
@@ -237,21 +244,20 @@ body{
             }
 
             .additional-info{
-            grid-template-columns: 2fr 1fr;
-            padding-block: 8rem;
+                grid-template-columns: 2fr 1fr;
+                padding-block: 8rem;
 
-            .intro{
-                border-inline-end: 0;
-            }
-
-            .colophon{
-                margin-inline-end: calc(var(--spacing) * 2);
-
-                *{
-                    text-align: center;
+                section.intro:first-child{
+                    border-inline-end: 0;
                 }
 
-            }
+                .colophon{
+                    margin-inline-end: calc(var(--spacing) * 2);
+
+                    *{
+                        text-align: center;
+                    }
+                }
             }
         }
     }

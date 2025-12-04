@@ -65,8 +65,7 @@ body{
             
             blockquote{
                 border:0.2rem dotted;
-                background-color: var(--grey);
-                
+                background-color: var(--bg-color);
             }
         }
 

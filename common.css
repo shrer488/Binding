@@ -181,6 +181,7 @@ body{
                         margin-block-end:calc(var(--spacing)*4);
                         text-align: center;
                         
+                        
                         /* quote */
                         p:first-child{
                             font-size: calc(var(--text-size)*1.5);
@@ -287,9 +288,9 @@ body{
            padding-inline: calc(var(--spacing)*2);
         }
 
-       .final-quote{
-                background-image: url("Images/marjan-blan--Vc-ok8CeBU-unsplash.jpg");
-                 background-blend-mode:multiply;
+        .final-quote{
+            background-image: url("Images/marjan-blan--Vc-ok8CeBU-unsplash.jpg");
+            background-blend-mode: multiply;
        } 
     }
 }
