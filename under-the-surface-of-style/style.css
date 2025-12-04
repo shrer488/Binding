@@ -79,38 +79,24 @@ body{
                 border: 0;
             }
         }
-    }
 
-
-    footer{
-        display: flex;
-        flex-direction: column;
-        background-color: var(--grey);
-        
-        a{
-            padding-inline: var(--spacing);
-            padding-block: calc(var(--spacing)/2);
+        article:first-of-type{
+         padding-block-end:0;
         }
 
-        a:after{
-            content: "↗";
-        }
+        .final-quote{
+            background-color: var(--article-3-highlight-color);
+            border-block-start:0.3rem double;
 
-        a:last-child{
-        background-color: black;
-        color: white;
-        text-align: center;
-        font-size: 1rem;
-        }
-        
-        a:last-child:after{
-        content: none;
-        }
 
-        a:first-child, a:last-child{
-            margin-top: var(--spacing);
+            p{
+                    color: var(--article-3-text-color);
+            }
+           
         }
     }
+
+
     
 
     
