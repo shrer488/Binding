@@ -220,8 +220,6 @@ body{
                  /* border-block-end:0.2rem dotted ; */
                  padding-inline: var(--spacing);
                  padding-block: calc(var(--spacing)*3);
-                background-image: url("Images/marjan-blan--Vc-ok8CeBU-unsplash.jpg");
-                 background-blend-mode:multiply;
 
                  p{
                     text-align: center;
@@ -288,6 +286,11 @@ body{
         article{
            padding-inline: calc(var(--spacing)*2);
         }
+
+       .final-quote{
+                background-image: url("Images/marjan-blan--Vc-ok8CeBU-unsplash.jpg");
+                 background-blend-mode:multiply;
+       } 
     }
 }
 
