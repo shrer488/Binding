@@ -195,6 +195,18 @@ body{
                         }
                         
                     }
+
+                    .first-blockquote{
+                        /* background-color: inherit; */
+                        /* border: inherit; */
+                        padding-inline: 0;
+                        padding-block-end: 0;
+
+                        p{
+                            font-size: calc(var(--text-size)*1.4);
+                            text-align: left;
+                        }
+                    }
                     
                 }
                 
@@ -213,8 +225,12 @@ body{
     }
     body{
     main{
+        .hero{
+                block-size: 65vh;
+        }
         article{
            padding-inline: calc(var(--spacing)*2);
+
         }
     }
 }

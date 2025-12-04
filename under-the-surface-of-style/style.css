@@ -48,7 +48,7 @@ body{
             /* double */
             section{
                     border-block-start: 0.2rem solid;
-                    border-block-end: 0.6rem double;
+                    border-block-end: 0.3rem double;
 
             }
         }
@@ -59,11 +59,25 @@ body{
                     /* background-color: var(--highlighter-color); */
                     color: var(--article-3-text-color);
                 }
+           
             
+
            blockquote{
-            border:0.5rem double;
+            /* border:0.5rem double; */
                 background-color: var(--grey);
+                border: 0.3rem double;
+                border-radius: 1rem;
+                corner-shape: notch;
+
+                p:first-child{
+                    font-size: calc(var(--text-size)*1.4);
+                }
            }
+
+           .first-blockquote{
+                background-color: inherit;
+                border: 0;
+            }
         }
     }
 
