@@ -43,6 +43,8 @@ body{
             display: grid;
             padding-block-start: calc(var(--spacing)*2);
             padding-block-end:calc(var(--spacing)*3);
+            padding-inline: 1rem;
+
             
             section{
                 h2{
@@ -59,12 +61,9 @@ body{
         .content{
             grid-template-columns: 1fr;
             border-block-end: 0.6rem double;
-            padding-inline: 1rem;
-
  
                 /* Article section */
                 section{
-
 
                     /* second column in list of articles */
                     ul>li:first-child{
@@ -138,13 +137,14 @@ body{
 
             
             .intro{
-                border-block-end: 0.1rem dotted;
+                /* border-block-end: 0.1rem dotted; */
                 padding-block-end: calc(var(--spacing)*3);
 
                 h2{
                     margin-block-start: 0;
                     font-size: calc(var(--h2)*1.5);
                 }
+
                 p:first-of-type{
                     margin-block-end: var(--spacing);
                 }
@@ -152,6 +152,21 @@ body{
 
             .colophon{
                 background: var(--grey);
+                align-self: start;
+                padding: 1.5rem;
+                padding-block-start: 0;
+                border: 0.1rem solid;
+                border-radius: 1rem;
+                corner-shape: notch;
+
+
+                p{
+                    padding-block-end: 1rem;
+                }
+
+                p:last-child{
+                    padding-block-end: 0;
+                }
             }
 
         }
@@ -170,10 +185,11 @@ body{
                 block-size: 100%;
             }
 
-            .content, .additional-info{
+
+            .content{
                 grid-template-columns: 1fr 1fr;
                 padding: 1rem;
-                padding-block: 4rem;
+                padding-block: 6rem;
 
              
                 section{
@@ -222,6 +238,20 @@ body{
 
             .additional-info{
             grid-template-columns: 2fr 1fr;
+            padding-block: 8rem;
+
+            .intro{
+                border-inline-end: 0;
+            }
+
+            .colophon{
+                margin-inline-end: calc(var(--spacing) * 2);
+
+                *{
+                    text-align: center;
+                }
+
+            }
             }
         }
     }
