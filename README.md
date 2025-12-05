@@ -9,7 +9,7 @@ The contradiction was clear: designers preached function while competing on aest
 
 <hr>
 <h2>Design</h2>
-<p>Newspapers deliver the latest news and trends, mirroring exactly what these essays attack: designers chasing what's current. I wanted the design to be similar to old 90s newspaper and the navigation to be in chronological order through 1992, 1993, and 1995 capturing both the passage of time and the 90s moment when these debates unfolded. </p>
+<p>Newspapers deliver the latest news and trends, mirroring exactly what these essays attack: designers chasing what's current. I wanted the design to be similar to old 90s newspaper and the navigation to be in chronological order through 1992, 1993, and 1995 capturing both the passage of time and the 90s moment when these debates unfolded. Each article is represented by a different color and a different style of blockquote showing the view along the years.</p>
 
 <hr>
 <h2>Articles</h2>
