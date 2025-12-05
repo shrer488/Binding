@@ -13,6 +13,10 @@ The contradiction was clear: designers preached function while competing on aest
 
 <hr>
 <h2>Articles</h2>
-Neomania: [https://justinmcguirk.com/honeywell-im-home](https://www.emigre.com/Essays/Magazine/Neomania) <br>
-Cult of the Ugly: [https://typography-interaction-2526.github.io/project/2/](https://www.eyemagazine.com/feature/article/cult-of-the-ugly) <br>
+Neomania: https://justinmcguirk.com/honeywell-im-home](https://www.emigre.com/Essays/Magazine/Neomania) <br>
+Cult of the Ugly: https://typography-interaction-2526.github.io/project/2/](https://www.eyemagazine.com/feature/article/cult-of-the-ugly) <br>
+Under the surface of style: https://www.eyemagazine.com/feature/article/under-the-surface-of-style
 
+<hr>
+<h2>Designer & Developer</h2>
+<p>This website was designed and developed by Riya Shrestha in 2025 as part of Typography and Interaction at Parsons School of Design.</p>
