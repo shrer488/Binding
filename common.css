@@ -143,7 +143,7 @@ body{
                 
                 /* Author section */
                 section{
-                    padding-inline: calc(var(--spacing)*1);
+                    padding-inline: var(--spacing);
                     padding-block: calc(var(--spacing)/2);
                     border-block-start: 0.2rem solid;
                     display: flex;
