@@ -306,3 +306,16 @@ body{
         }
     }
 
+
+@media (width>2000px) {
+  body{
+    main{
+
+        .content, .additional-info{
+
+           padding-inline: calc(var(--spacing)*18);
+      }  
+    }
+}
+}
+
