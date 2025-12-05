@@ -78,25 +78,32 @@ body{
                     }
     
                     /* hover states in the navigation */
+                    li:first-child{
+                        a:hover{
+                            background-color: black;
+                            color: white;
+                        }
+                    }
+
                     li:last-child{
                     border-inline-end:0;
                         a:hover{
-                            background-color: #FFD77F;
-                            color: #6b6534;
+                            background-color: var(--article-3-highlight-color);
+                            color: var(--article-3-text-color);
                         }
                     }
     
                     li:nth-child(2){
                         a:hover{
-                            background-color: #7FFFF2;
-                            color: #346b66;
+                            background-color: var(--article-1-highlight-color);
+                            color: var(--article-1-text-color);
                         }
                     }
                     
                     li:nth-child(3){
                         a:hover{
-                            background-color: #FFAFC0;
-                            color: #6b3443;
+                            background-color: var(--article-2-highlight-color);
+                            color: var(--article-2-text-color);
                         }
                     }
 
