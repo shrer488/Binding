@@ -20,7 +20,6 @@ body{
                 section{
                         border-block-start: 1rem solid;
                         border-block-end: 0.1rem solid;
-                        padding-inline: 1rem;
                         padding-block: calc(var(--spacing)/4);
                 } 
             }

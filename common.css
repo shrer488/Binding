@@ -251,7 +251,7 @@ body{
         display: flex;
         flex-direction: column;
         background-color: black;
-        color: white;
+        color: var(--bg-color);
         
         a{
             padding-inline: var(--spacing);
@@ -262,7 +262,7 @@ body{
 
         a:last-child{
         background-color: black;
-        color: white;
+        color: var(--grey);
         text-align: center;
         font-size: 1rem;
         }
