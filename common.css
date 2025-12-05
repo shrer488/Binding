@@ -361,7 +361,6 @@ body{
 
                 section {
                     border-block-end: 0.1rem solid;
-                    /* padding-inline: calc(var(--spacing)*14); */
                     padding-block: 0.2rem;
                 } 
             } 
@@ -416,4 +415,15 @@ body{
         }
 }
 
+}
+
+@media (width>2000px) {
+  body{
+    main{
+
+        article{
+           padding-inline: calc(var(--spacing)*30);
+      }  
+    }
+}
 }
