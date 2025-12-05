@@ -19,4 +19,4 @@ Under the surface of style: https://www.eyemagazine.com/feature/article/under-th
 
 <hr>
 <h2>Designer & Developer</h2>
-<p>This website was designed and developed by Riya Shrestha in 2025 as part of Typography and Interaction at Parsons School of Design.</p>
+<p>This website was designed and developed by <a href="https://www.linkedin.com/in/riya-shrestha-010944178/">Riya Shrestha</a> in 2025 as part of Typography and Interaction at Parsons School of Design.</p>
