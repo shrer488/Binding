@@ -9,7 +9,7 @@ The contradiction was clear: designers preached function while competing on aest
 
 <hr>
 <h2>Design</h2>
-<p>We wanted to explore the idea of companies taking our data, and it being hidden in a carefully packaged product. While behind the scenes the data is being used for god knows what. We wanted to channel that invisible wall with a dark theme so we tried to use visuals that matched the terminal in a computer.</p>
+<p>Newspapers deliver the latest news and trends, mirroring exactly what these essays attack: designers chasing what's current. I wanted the design to be similar to old 90s newspaper. </p>
 
 <hr>
 <h2>Author</h2>
