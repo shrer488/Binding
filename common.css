@@ -266,10 +266,6 @@ body{
         text-align: center;
         font-size: 1rem;
         }
-        
-        a:last-child:after{
-        content: none;
-        }
 
         a:first-child, a:last-child{
             margin-top: var(--spacing);
