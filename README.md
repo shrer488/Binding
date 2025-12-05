@@ -1,1 +1,23 @@
-# Binding
+<h1>Surface</h1>
+<p><em>Typography & Interaction Project 3: Binding</em></p>
+
+<p>
+The 1990s brought graphic design to a breaking point. As computers democratized the profession and consumer culture accelerated, designers found themselves torn between Modernist principles and postmodern chaos. Steven Heller's "Cult of the Ugly" (1993) attacked graduate school experiments as self-indulgent, warning that "ugliness as its own virtue diminishes all design." Anne Burdick's "Neomania" (1992) diagnosed the profession's addiction to novelty, admitting "we design to indulge our obsession with the visual." Ellen Lupton's "Under the Surface of Style" (1995) defended style as meaningful, calling it "an outward sign of difference."
+
+The contradiction was clear: designers preached function while competing on aesthetics, denounced formalism while reveling in it, and spoke of timeless principles while chasing constant reinvention. These essays capture a profession fighting over its identity when yesterday's innovation became today's cliché.
+</p>
+
+<hr>
+<h2>Design</h2>
+<p>We wanted to explore the idea of companies taking our data, and it being hidden in a carefully packaged product. While behind the scenes the data is being used for god knows what. We wanted to channel that invisible wall with a dark theme so we tried to use visuals that matched the terminal in a computer.</p>
+
+<hr>
+<h2>Author</h2>
+<p>Justin McGuirk is a writer, critic, and curator based in London. He is the director of Strelka Press, the publishing arm of the Strelka Institute in Moscow. He has been the design critic of The Guardian, the editor of Icon magazine and the design consultant to Domus. In 2012 he was awarded the Golden Lion at the Venice Biennale of Architecture for an exhibition he curated with Urban Think Tank. His book Radical Cities: Across Latin America in Search of a New Architecture is published by Verso.</p>
+
+
+
+<hr>
+<h2>Links</h2>
+Article: https://justinmcguirk.com/honeywell-im-home <br>
+Subject: https://typography-interaction-2526.github.io/project/2/
