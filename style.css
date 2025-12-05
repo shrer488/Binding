@@ -136,7 +136,7 @@ body{
             }
 
             .colophon{
-                background: var(--grey);
+                background: #fafafa;
                 align-self: start;
                 padding: 2rem;
                 padding-block-start: 0;
