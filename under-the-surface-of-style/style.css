@@ -1,4 +1,5 @@
 :root{
+    --bg-color:#ebe1d4; /* each article has a different background color which is used in the navigation and sometimes in the blockquote*/
 }
 
 em{
@@ -17,8 +18,6 @@ body{
     
 
     header{
-        
-
         nav{
             .active{
                 a{
@@ -49,21 +48,16 @@ body{
             section{
                     border-block-start: 0.2rem solid;
                     border-block-end: 0.3rem double;
-
             }
         }
 
         article{
 
             a:hover{
-                    /* background-color: var(--highlighter-color); */
                     color: var(--article-3-text-color);
                 }
            
-            
-
            blockquote{
-            /* border:0.5rem double; */
                 background-color: var(--grey);
                 border: 0.3rem double;
                 border-radius: 1rem;
@@ -82,13 +76,12 @@ body{
         }
 
         article:first-of-type{
-         padding-block-end:0;
+            padding-block-end:0;
         }
 
         .final-quote{
             background-color: var(--article-3-highlight-color);
             border-block-start:0.3rem double;
-
 
             p{
                     color: var(--article-3-text-color);
@@ -96,30 +89,5 @@ body{
            
         }
     }
-
-
-    
-
     
 }
-
-/* @media (width>1000px) {
-    :root{
-    --text-color: black;
-    --h1: 8rem;
-    --text-size: 1.5rem;
-    --spacing: 4rem;
-}
-
-} */
-/* @media (prefers-color-scheme: dark) {
-    :root{
-    --bg-color: green;
-    --fg-color: black;
-}
-
-body{
-    background-color: var(--bg-color);
-    color: var(--text-color);
-}
-} */

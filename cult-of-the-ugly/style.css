@@ -1,11 +1,9 @@
 :root{
-    --bg-color:#fceef1;
+    --bg-color:#fceef1; /* each article has a different background color which is used in the navigation and sometimes in the blockquote*/
 }
 
 
-
 body{
-    /* background-color: var(--bg-color); */
     color: var(--text-color);
     background-size: auto;
     font-size: var(--text-size);
@@ -13,7 +11,6 @@ body{
     
 
     header{
-        
 
         nav{
             .active{
@@ -26,14 +23,9 @@ body{
                 }
             }
         }
-
-	
     }
 
     main{
-        
-        /* Article border */
-        /* Solid */
 
         .hero{
             
@@ -42,6 +34,8 @@ body{
                 color: var(--article-2-text-color);
             }
 
+            /* Article border */
+            /* Solid */
             section{
                     border-block-start: 0.2rem solid;
                     border-block-end: 1rem solid;
@@ -56,10 +50,8 @@ body{
             }
 
             a:hover{
-                    /* background-color: var(--highlighter-color); */
                     color: var(--article-2-text-color);
                 }
-
 
 
             mark{
@@ -79,10 +71,7 @@ body{
                 p{
                   font-size: calc(var(--text-size)*1.4);
                 }
-                
             }
-            
-            
         }
 
         .final-quote{
@@ -95,31 +84,5 @@ body{
            
         }
     }
-
-
-    
-    
-
     
 }
-/* 
-@media (width>1000px) {
-    :root{
-    --text-color: black;
-    --h1: 8rem;
-    --text-size: 1.5rem;
-    --spacing: 4rem;
-}
-
-} */
-/* @media (prefers-color-scheme: dark) {
-    :root{
-    --bg-color: green;
-    --fg-color: black;
-}
-
-body{
-    background-color: var(--bg-color);
-    color: var(--text-color);
-}
-} */
