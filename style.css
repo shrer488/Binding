@@ -152,6 +152,11 @@ body{
                 p:last-child{
                     padding-block-end: 0;
                 }
+
+                a{
+                    font-weight: 600;
+                    text-decoration: underline;
+                }
             }
         }
     }
