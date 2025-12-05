@@ -12,12 +12,7 @@ The contradiction was clear: designers preached function while competing on aest
 <p>Newspapers deliver the latest news and trends, mirroring exactly what these essays attack: designers chasing what's current. I wanted the design to be similar to old 90s newspaper. </p>
 
 <hr>
-<h2>Author</h2>
-<p>Justin McGuirk is a writer, critic, and curator based in London. He is the director of Strelka Press, the publishing arm of the Strelka Institute in Moscow. He has been the design critic of The Guardian, the editor of Icon magazine and the design consultant to Domus. In 2012 he was awarded the Golden Lion at the Venice Biennale of Architecture for an exhibition he curated with Urban Think Tank. His book Radical Cities: Across Latin America in Search of a New Architecture is published by Verso.</p>
+<h2>Articles</h2>
+Neomania: [https://justinmcguirk.com/honeywell-im-home](https://www.emigre.com/Essays/Magazine/Neomania) <br>
+Cult of the Ugly: [https://typography-interaction-2526.github.io/project/2/](https://www.eyemagazine.com/feature/article/cult-of-the-ugly) <br>
 
-
-
-<hr>
-<h2>Links</h2>
-Article: https://justinmcguirk.com/honeywell-im-home <br>
-Subject: https://typography-interaction-2526.github.io/project/2/
